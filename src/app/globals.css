@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollBarBlue::-webkit-scrollbar-track {
+	background-color: transparent;
+	cursor: pointer !important;
+}
+
+.scrollBarBlue::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background-color: transparent;
+	cursor: pointer !important;
+}
+
+.scrollBarBlue::-webkit-scrollbar-thumb {
+	height: 5px;
+	width: 20;
+	border-radius: 99px;
+	background: #0be0fd;
+	cursor: pointer !important;
+}
+
+.hide-address {
+	max-height: 0; /* Collapsed state */
+	overflow: hidden; /* Hide content when collapsed */
+	opacity: 0; /* Start with hidden content */
+	transform: translateY(-10px); /* Slight upward shift */
+	transition:
+		opacity 0.5s,
+		transform 0.5s,
+		max-height 0.5s ease-out; /* Smooth transition for properties */
+}
+
+.row-hover:hover .hide-address {
+	max-height: 100px; /* Estimated maximum height, adjust as needed */
+	opacity: 1; /* Fully visible */
+	transform: translateY(0); /* Return to normal position */
+	/* No need for a separate animation, transitions will handle the effect */
+}
+
+.UtilityBarBigBlue {
+	background: linear-gradient(267deg, rgba(9, 12, 17, 0) 52.08%, rgba(11, 224, 253, 0.4) 100%);
+	backdrop-filter: blur(3px);
+}
+
+.SafuBorderBlue {
+	border: 1px solid #0be0fd;
+}
+
+.UtilityBarBigBlue:hover {
+	border-color: #0be0fd;
+}
+
+.UtilityBarBigPurple {
+	background: linear-gradient(267deg, rgba(9, 12, 17, 0) 52.08%, #9c5fff54);
+	backdrop-filter: blur(3px);
+}
+
+.SafuBorderPurple {
+	border: 1px solid #7e0fd6;
+}
+
+.UtilityBarBigPurple:hover {
+	border-color: #7e0fd6;
+}
+
+.UtilityBarBigRed {
+	background: linear-gradient(267deg, rgba(9, 12, 17, 0) 52.08%, #e008576f);
+	backdrop-filter: blur(3px);
+}
+
+.UtilityBarBigRed:hover {
+	border-color: #d60f57;
+}
+
+.SafuBorderRed {
+	border: 1px solid #d60f57;
+}

@@ -1,0 +1,49 @@
+{
+  "name": "t-live-pairs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
+    "iconoir-react": "^6.9.0",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-countdown-circle-timer": "^3.2.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-tooltip": "^5.21.1",
+    "sharp": "^0.32.5",
+    "styled-components": "^6.1.0",
+    "tabler-icons-react": "^1.56.0",
+    "viem": "^2.9.20"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "18.0.3",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.19.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": ">=10",
+    "postcss": "^8.4.14",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.1.4",
+    "typescript": "5.0.4"
+  },
+  "lint-staged": {
+    "*.@(js|jsx|ts|tsx)": [
+      "eslint . --ext ts --ext tsx --ext js --ext jsx --ignore-path .prettierignore",
+      "prettier --write \"**/*.{js,ts,tsx}\""
+    ]
+  }
+}
