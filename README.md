@@ -5,7 +5,7 @@
 This is a very simplified version of a piece of our front-end app.
 It fetches the most recently added pairs on Uniswap and displays them in a table.
 
-The data fetching is done using a [Supababase client](https://supabase.com/docs). Treat the Supabase keys as public - they can be used on the client side.
+The data fetching is done using a [Supabase client](https://supabase.com/docs). Treat the Supabase keys as public - they can be used on the client side.
 
 ## Your instructions
 
